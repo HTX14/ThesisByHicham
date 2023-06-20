@@ -101,6 +101,7 @@ main.cards section.card.about {
 @media screen and (max-width: 720px) {
   main.cards {
       flex-direction: column;
+      margin-top: 32px;
   }
 
   main.cards section.card {
