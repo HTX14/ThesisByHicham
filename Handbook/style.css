@@ -12,6 +12,10 @@ html, body {margin: 0; background-color: #ebe9e5; color: #858585; font-family: '
   max-height:100vh
 }
 
+hr{
+  border: 2px solid #F16F00;
+  border-radius: 5px;
+}
 
 footer {
  flex-shrink: 0 !important;
@@ -27,6 +31,14 @@ footer {
   max-width: 100%;
   max-height: 400px;
   border-radius: 25px;
+}
+
+.steps{
+  position: relative;
+    max-width: 133%;
+    max-height: 400px;
+    border-radius: 25px;
+    right: 67px;
 }
 
 .cord{
