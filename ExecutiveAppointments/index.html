@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Executive Appointments</title>
+  <link rel="icon" href="../assets/icon-thesis.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link href="https://fonts.cdnfonts.com/css/libre-franklin-medium" rel="stylesheet">
+                
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+
+  <div id="fixed">
+    <div class="rotated-text"><span class="rotated-text__inner"><br/>Executive <br><br> Appointments</span></div>
+  </div>
+  
+  <div id="fluid">
+    
+    <h1 class="sub_title">Executive Appointments</h1>  
+    <p>Executive Appointments  is an app that is for executive appointment purpose.
+        this app in particular has a specific circle of people who will use it to make their appointments, it is not open to all siemens employees.
+        the workflow of the app is the following: </p>
+
+<br>
+<p>First we have 5 roles in this app</p><br>
+      <img src="../assets/customers (1).png" class="customers">
+     
+      <br>
+      <br>
+<ul>
+    <p>1. Originator<p>
+    <p>2. Managers</p>
+    <p>3. PO</p>
+    <p>4. Business Head</p>
+    <p>5. CEO</p>
+</ul>
+
+<hr>
+<br>
+      <p>Originator is the one who creates the request, to create a request you fill out a form, inserting all the data, at the end you click "create" which creates the request and sends it to the corresponding person according to the workflow.</p>
+      <img src="../assets/originator.png" class="originator">
+<br>
+<br>
+<img src="../assets/newrequest.png" class="newrequest">
+<br>
+
+<p>The manager is the one to whom the request arrives if in the hierarchy of roles he is above whoever made the "Originator" request, in which case the manager can approve the request, ask for information or refuse it.
+    another case is that of the level 2 manager, that is, the originator can have 2 managers above him, so if the level 1 manager approves, the request will go to the level 2 manager where he can always approve, ask for information ( the request goes back to the originator where it can change some fields and resend the request) is to reject.
+    otherwise if in the role hierarchy the originator does not have a manager then the request goes directly to the PO.
+</p>
+<img src="../assets/manager.png" class="manager">
+<br>
+<br>
+<img src="../assets/wf_originator.png" class="wf_originator">
+<br>
+<ul class="cases">
+    <p>First case  -  in the first case, the request goes to the corresponding manager, to then go to the PO in case of approval.</p>
+    <p>Second case -   the second case shows a case where the originator has 2 managers, the request goes to the PO if both approve</p>
+    <p>Third case -  the third case is a case where the originator has no manager above him, so the request goes to the PO pending approval.</p>
+</ul>
+   
+<p>The PO (HR), evaluates the request sent and can decide to approve, motivating both the approval and the refusal of the request (P&O consultation), and can also request information (as seen previously).
+</p>
+
+<p><img class="dot" src="../assets/approved.png" alt=""> if approved, the request goes to the Business head.</p>
+
+<p><img class="dot" src="../assets/rejected.png" alt=""> In case of refusal, the request goes back to the originator.</p>
+
+<img src="../assets/po.png" class="po">
+<br>
+
+<img src="../assets/po_consultation.png" class="po_consultation" alt="">
+
+<p>The business head are those who always, based on the request sent, are approved by the managers and by the po, then approve, ask for information or refuse.
+  the business head is the last step of the workflow, but if in the form the originator selects other in the role selection field, then the request will have a further final step, the CEO,
+  since the CEO is also a business head, if in the hierarchy of roles the originator selects "other" in the form and has the CEO as business head then the request will stop at the Business Head, to avoid sending the request twice to the same person.
+</p>
+<img src="../assets/bizhead.png" class="bizhead">
+
+<img src="../assets/bizhead-approval.png" class="bizhead-approval">
+
+<br>
+<br>
+
+<p>The CEO is the last step, if the request reaches him, he has the power to give the final approval to appoint the executive chosen in the originator's request.
+</p>
+<img src="../assets/ceo.png" class="ceo">
+
+<img src="../assets/ceo-approval.png" class="ceo-approval">
+
+<br>
+<br>
+<br>
+<br>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
