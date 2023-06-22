@@ -23,6 +23,10 @@ footer {
   
 }
 
+hr{
+  border: 2px solid #F16F00;
+  border-radius: 5px;
+}
 
 p{
   font-family: 'Libre Franklin Medium', sans-serif;
@@ -79,5 +83,9 @@ p{
     background-color: #3A6EA5;    /* color of the scroll thumb */
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 2px solid #E3E0D8;  /* creates padding around scroll thumb */
+  }
+  
+  .sub_title{
+    color: #004e98;
   }
   
